@@ -1,0 +1,23 @@
+body {
+  background: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg)
+    center/cover no-repeat fixed;
+  font: 1em/1.618 Inter, sans-serif;
+}
+
+h2 {
+  font-size: 36px !important;
+
+  text-shadow: 0.5px 0.5px 0.5px rgb(0 0 0 / 30%);
+  text-shadow: -0.5px -0.5px 0.5px rgb(0 0 0 / 30%),
+    1px 1px 2px rgb(212 212 212 / 30%);
+  mix-blend-mode: hard-light;
+}
+
+h3 {
+  font-size: 24px !important;
+
+  text-shadow: 0.5px 0.5px 0.5px rgb(0 0 0 / 30%);
+  text-shadow: -0.5px -0.5px 0.5px rgb(0 0 0 / 30%),
+    1px 1px 2px rgb(212 212 212 / 30%);
+  mix-blend-mode: hard-light;
+}
