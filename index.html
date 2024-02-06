@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>sunglassdev</title>
+    <meta property="og:title" content="sunglass" />
+    <meta property="og:type" content="https://sunglass.is-a.dev/" />
+    <meta property="og:url" content="https://sunglass.is-a.dev/" />
+    <meta
+      property="og:image"
+      content="https://sunglassdev.github.io/sunglass.png"
+    />
+    <meta property="og:description" content="full of nothingness" />
+    <meta name="theme-color" content="#493e36" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsem.css" />
   </head>
+  <div class="startthing">
+    <i><a class="next">loading...</a></i>
+  </div>
+  <body class="bmain">
+    <script>
+      var _app = function () {
+        this.id = 0;
+        this.videoElement = null;
+        this.musicVolume = 0.5;
+        this.musicFadeIn = 1000;
+        this.Texts = [
+          "sunglass",
+          "cool guy",
+          "13",
+          "i7-11800H, 16GB RAM, 1TB SSD, RTX 3060, 144hz",
+          "im not a dev 👴",
+          " ",
+        ];
+      };
 
-  <body translate="no">
-    <body>
-      <div
-        class="absolute top-0 left-0 w-full z-50 h-screen flex justify-center items-center p-4 md:p-6 lg:p-8"
-      >
-        <div
-          class="max-w-3x max-h bg-gradient-to-b from-#23004a to-#23004a/30 text-[#FFFFFF] backdrop-blur-[.65em] border-[1px] border-solid border-white border-opacity-10 rounded-2xl shadow-black/50 overflow-hidden shadow-2xl hover:-translate-y-1 hover:shadow-black/75 hover:backdrop-blur-[5em] transition"
-        >
-          <div class="grid place-items-center grid-cols-6 gap-2">
-            <div class="col-span-3 p-8">
-              <h2 class="font-bold text-2xl">sunglassdev</h2>
-              <br />
-              <h3 class="text-2x1 font-bold">hello there!</h3>
-                i'm sunglass, a aspiring programmer that does random ass things!
-                <br />
-                <br />
-                <hr />
-                <br />
-                
-                <h2 class="text-2x1 font-bold">fluent languages</h2>
-                <img src="https://skillicons.dev/icons?i=lua,js,css,html" alt="fluent languages">
-                <br />
-                <br />
-                <hr />
-                <br />
-                <h2 class="text-2x1 font-bold">languages im learning</h2>
-                <img src="https://skillicons.dev/icons?i=cpp,python" alt="languages im learning">
-                <br />
-                <br />
-                <hr />
-                <br />
-                <h2 class="text-2x1 font-bold">socials</h2>
-                <img src="https://skillicons.dev/icons?i=discord" alt="socials"> sunglassv2
-                
-               
-              </p>
-            </div>
+      var app = new _app();
+    </script>
+    <div class="background">
+      <div id="pattern"></div>
+      <video id="background" loop playsinline>
+        <source src="song.mp3" type="audio/mpeg" />
+        <script>
+          var video = document.getElementById("background");
+
+          app.videoElement = video;
+          app.videoElement.volume = 0;
+        </script>
+      </video>
+    </div>
+    <div>
+      <section class="main">
+        <div class="text-start containers">
+          <div class="Brand">
+            <h1 class="Paragraph Hello">Hello World!</h1>
+            <p class="a"><span id="Bruh" class="Paragraph"></span></p>
           </div>
+          <div class="Brand">
+            <h3 class="Description">i do random things</h3>
+            <br />
+            <br />
+
+            <h3 class="Description">fluent languages</h3>
+            <img
+              src="https://skillicons.dev/icons?i=lua,js,css,html"
+              alt="fluent languages"
+              class="main_image2"
+            />
+
+            <br />
+            <br />
+
+            <h3 class="Description">socials</h3>
+            <img
+              src="https://skillicons.dev/icons?i=discord"
+              alt="fdiscod"
+              class="main_image2"
+            />
+            <h3 class="Description">sunglassv2</h3>
+          </div>
+          <img class="d-xl-flex main_image1" id="main_image1" src /><iframe
+            height="250px"
+            width="410px"
+            scrolling="no"
+            src="https://lanyard.cnrad.dev/api/1202753080752607273?borderRadius=5px&idleMessage=im probably doing nothing&amp;bg=a&amp;animated=true"
+            frameborder="0"
+          >
+          </iframe>
         </div>
-      </div>
-    </body>
+      </section>
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery_cookie.js"></script>
+    <script src="assets/js/anime.js"></script>
+    <script src="assets/js/spotify.js"></script>
+    <script src="assets/js/random_image.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"850fc757ce6969e6","r":1,"version":"2024.2.0","token":"eaac0412d0bb4b0085abd0c56bd86cd0"}'
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
