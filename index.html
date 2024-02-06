@@ -46,7 +46,13 @@
           "13",
           "i7-11800H, 16GB RAM, 1TB SSD, RTX 3060, 144hz",
           "im not a dev 👴",
-          " ",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "hehe",
+          
         ];
       };
 
@@ -55,15 +61,30 @@
     <div class="background">
       <div id="pattern"></div>
       <video id="background" loop playsinline>
-        <source src="song.mp3" type="audio/mpeg" />
-        <script>
-          var video = document.getElementById("background");
-
-          app.videoElement = video;
-          app.videoElement.volume = 0;
-        </script>
+          <source id="audioSource" type="audio/mpeg" />
+          <script>
+              var video = document.getElementById("background");
+              var audioSource = document.getElementById("audioSource");
+  
+              var songs = ['/songs/song.mp3', '/songs/song2.mp3', '/songs/song3.mp3', '/songs/song4.mp3', '/songs/song5.mp3', '/songs/song6.mp3'];
+  
+              video.addEventListener('ended', function () {
+                  var randomSong = songs[Math.floor(Math.random() * songs.length)];
+                  audioSource.src = randomSong;
+                  video.load();
+                  video.play();
+              });
+  
+              var initialSong = songs[Math.floor(Math.random() * songs.length)];
+              audioSource.src = initialSong;
+              video.load();
+              video.play();
+  
+              video.volume = 0;
+          </script>
       </video>
-    </div>
+  </div>
+  
     <div>
       <section class="main">
         <div class="text-start containers">
@@ -77,32 +98,68 @@
             <br />
 
             <h3 class="Description">fluent languages</h3>
-            <img
-              src="https://skillicons.dev/icons?i=lua,js,css,html"
-              alt="fluent languages"
-              class="main_image2"
-            />
+            <br>
+            <div class="container3">
+              <img
+                  src="https://cdn.simpleicons.org/html5/E34F26"
+                  alt="fdiscod"
+                  class="main_image3"
+                  height="48" 
+                  width="48"
+              />
+          
+              <img
+                  src="https://cdn.simpleicons.org/css3/#1572B6"
+                  alt="fdiscod"
+                  class="main_image3"
+                  height="48" 
+                  width="48"
+              />
+          
+              <img
+                  src="https://cdn.simpleicons.org/javascript/#F7DF1E"
+                  alt="fdiscod"
+                  class="main_image3"
+                  height="48" 
+                  width="48"
+              />
+
+              <img
+                  src="https://cdn.simpleicons.org/lua/blue"
+                  alt="fdiscod"
+                  class="main_image3"
+                  height="48" 
+                  width="48"
+              />
+
+          </div>
+            
 
             <br />
             <br />
 
             <h3 class="Description">socials</h3>
             <img
-              src="https://skillicons.dev/icons?i=discord"
+              src="https://cdn.simpleicons.org/discord/5865F2"
               alt="fdiscod"
               class="main_image2"
+              height="48" 
+              width="48"
             />
             <h3 class="Description">sunglassv2</h3>
-          </div>
-          <img class="d-xl-flex main_image1" id="main_image1" src /><iframe
-            height="250px"
-            width="410px"
-            scrolling="no"
-            src="https://lanyard.cnrad.dev/api/1202753080752607273?borderRadius=5px&idleMessage=im probably doing nothing&amp;bg=a&amp;animated=true"
-            frameborder="0"
-          >
-          </iframe>
+       
+
+            <img class="d-xl-flex " id="main_image1" src /><iframe
+              height="400px"
+              width="410px"
+              scrolling="no"
+              src="https://lanyard.cnrad.dev/api/1202753080752607273?borderRadius=5px&idleMessage=im probably doing nothing&bg=a7animated=true"
+              frameborder="0"
+            >
+            </iframe>
         </div>
+        <br>
+        <a href="assets/css/secret.html" style="color: #202020;">?</a>
       </section>
     </div>
     <script src="assets/js/bootstrap.js"></script>
@@ -110,13 +167,6 @@
     <script src="assets/js/jquery_cookie.js"></script>
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/spotify.js"></script>
-    <script src="assets/js/random_image.js"></script>
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"850fc757ce6969e6","r":1,"version":"2024.2.0","token":"eaac0412d0bb4b0085abd0c56bd86cd0"}'
-      crossorigin="anonymous"
-    ></script>
+    <script src="assets/js/background.js"></script>
   </body>
 </html>

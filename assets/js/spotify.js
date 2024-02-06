@@ -5,10 +5,6 @@
     app.videoElement.currentTime = $.cookie("videoTime");
   }
 
-  document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-  });
-
   $(".next").click(function () {
     next();
   });
@@ -35,8 +31,6 @@
   }, 1350);
 
   setTimeout(function () {
-    app.videoElement.play();
-
     $(".navbar").css("visibility", "visible").hide().fadeIn(500);
     $(".background").css("visibility", "visible").hide().fadeIn(500);
     $(".main").css("visibility", "visible").hide().fadeIn(500);
