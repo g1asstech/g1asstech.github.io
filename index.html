@@ -28,10 +28,10 @@
     />
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsem.css" />
+    <link rel="stylesheet" href="assets/responsem.css" />
   </head>
   <div class="startthing">
-    <i><a class="next">loading...</a></i>
+    <i><a class="next">enter</a></i>
   </div>
   <body class="bmain">
     <script>
@@ -42,10 +42,7 @@
         this.musicFadeIn = 1000;
         this.Texts = [
           "sunglass",
-          "cool guy",
           "13",
-          "i7-11800H, 16GB RAM, 1TB SSD, RTX 3060, 144hz",
-          "im not a dev 👴",
           "",
           "",
           "",
@@ -66,7 +63,7 @@
               var video = document.getElementById("background");
               var audioSource = document.getElementById("audioSource");
   
-              var songs = ['/songs/song.mp3', '/songs/song2.mp3', '/songs/song3.mp3', '/songs/song4.mp3', '/songs/song5.mp3', '/songs/song6.mp3'];
+              var songs = ['songs/song.mp3', 'songs/song2.mp3', 'songs/song3.mp3', 'songs/song4.mp3', 'songs/song5.mp3', 'songs/song6.mp3'];
   
               video.addEventListener('ended', function () {
                   var randomSong = songs[Math.floor(Math.random() * songs.length)];
@@ -149,11 +146,11 @@
             <h3 class="Description">sunglassv2</h3>
        
 
-            <img class="d-xl-flex " id="main_image1" src /><iframe
-              height="400px"
-              width="410px"
+            <img class="main_image3 " id="main_image1" src /><iframe
+              height="300px"
+              width="700px"
               scrolling="no"
-              src="https://lanyard.cnrad.dev/api/1202753080752607273?borderRadius=5px&idleMessage=im probably doing nothing&bg=a7animated=true"
+              src="status/index.html"
               frameborder="0"
             >
             </iframe>
