@@ -60,25 +60,22 @@
       <video id="background" loop playsinline>
           <source id="audioSource" type="audio/mpeg" />
           <script>
-              var video = document.getElementById("background");
-              var audioSource = document.getElementById("audioSource");
-  
-              var songs = ['songs/song.mp3', 'songs/song2.mp3', 'songs/song3.mp3', 'songs/song4.mp3', 'songs/song5.mp3', 'songs/song6.mp3'];
-  
-              video.addEventListener('ended', function () {
-                  var randomSong = songs[Math.floor(Math.random() * songs.length)];
-                  audioSource.src = randomSong;
-                  video.load();
-                  video.play();
-              });
-  
-              var initialSong = songs[Math.floor(Math.random() * songs.length)];
-              audioSource.src = initialSong;
-              video.load();
-              video.play();
-  
-              video.volume = 0;
-          </script>
+            var video = document.getElementById("background");
+            var audioSource = document.getElementById("audioSource");
+            var songs = ['songs/song.mp3', 'songs/song2.mp3', 'songs/song3.mp3', 'songs/song4.mp3', 'songs/song5.mp3', 'songs/song6.mp3'];
+            function playRandomSong() {
+                var randomSong = songs[Math.floor(Math.random() * songs.length)];
+                audioSource.src = randomSong;
+                video.load();
+                video.play();
+            }
+
+            // Event listener for the 'ended' event
+            video.addEventListener('ended', playRandomSong);
+            playRandomSong();
+
+            video.volume = 0;
+        </script>
       </video>
   </div>
   
@@ -165,5 +162,10 @@
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/spotify.js"></script>
     <script src="assets/js/background.js"></script>
+    <script>
+      document.querySelector('.next').addEventListener('click', function () {
+          playRandomSong();
+      });
+  </script>
   </body>
 </html>
